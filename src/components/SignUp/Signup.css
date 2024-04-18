@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.font{
+    font-family: "Italianno", cursive;
+    font-weight: 400;
+    position: absolute;
+    bottom: 70px;
+  color: darkorange;
+}
+
+
+
+
+.parent {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+}
+
+
+form {
+    background-color: white;
+    padding: 15px;
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgb(188, 185, 185);
+    width: 30%;
+}
+
+form input {
+    display: block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+
+form input:focus {
+    outline: none;
+}
+
+form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+
+.btn_supmit button {
+    position: relative;
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    width: 30%;
+    background-color: deeppink;
+    color: white;
+    transition: 0.3s linear;
+}
+
+.btn_supmit button:hover {
+    background-color: white;
+    border: 2px solid deeppink;
+    color: deeppink;
+}
+
+@media (min-width:320px) and (max-width:767px) {
+    form {
+        width: 90%;
+    }
+    .font{
+        bottom: 50px;
+    }
+}
+
+@media (min-width:767px) and (max-width:1200px) {
+    .btn_supmit button {
+        width: 40%;
+    }
+
+    .font{
+        bottom: 80px;
+    }
+}

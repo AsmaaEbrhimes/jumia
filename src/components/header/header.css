@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+
+    overflow-x: hidden;
+}
+
+.img_header img {
+    width: 100%;
+}
+
+.two_header {
+    background-color: white;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+p {
+    text-decoration: none;
+}
+
+.first_header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #eee;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.first_header p{
+    color: coral;
+    font-family: 'Rubik', sans-serif;
+}
+
+.first_header span{
+    color: coral;
+    font-family: 'Rubik', sans-serif;
+}
+
+.first_header i{
+    color: black;
+}
+
+
+.first_header .lang {
+    display: flex;
+    cursor: pointer;
+    justify-content: space-around;
+}
+
+.first_header .lang span {
+    margin-left: 20px;
+}
+
+
+.first_header img {
+    width: 30px;
+}
+
+
+.flex_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    padding: 10px;
+}
+
+.shopping {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.shopping i {
+    position: relative;
+    top: -3px;
+
+}
+
+.absolute {
+    position: absolute;
+    display: none;
+}
+
+.help {
+    display: flex;
+    cursor: pointer;
+}
+
+.help i {
+    position: relative;
+    top: 3px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+
+
+.jumia {
+    position: absolute;
+    top: -1px;
+    width: 100px;
+    height: 60px;
+}
+.search{
+    display: flex;
+}
+.search .btn_search {
+    border: none;
+    padding: 10px;
+    color: white;
+    background-color: rgb(246, 144, 71);
+}
+
+.search input {
+    padding: 10px;
+    border: 1px solid #eee;
+  
+}
+
+.search input::placeholder{
+    font-size: 15px;
+}
+
+
+@media (min-width:320px) and (max-width:767px) {
+    .search {
+        position: absolute;
+        top: 50px;
+        width: 100%;
+        display: flex;
+    }
+
+    .search input{
+       width: 100%;
+    }
+    .jumia {
+        display: none;
+    }
+}
+ 
+@media (min-width:320px) and (max-width:767px){
+    .ar, .en{
+        display: none;
+     
+    }
+}
+
+@media (min-width:767px) and (max-width:1200px) {
+    .search {
+        position: absolute;
+        top: 90px;
+        display: flex;
+        width: 100%;
+      
+    }
+    .search input {
+        width: 100%;
+    }
+
+    .jumia{
+        position: relative;
+        top: 0;
+    }
+}
